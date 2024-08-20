@@ -14,10 +14,8 @@ summaryData = table();
 startDate = min(data.Date);
 endDate = max(data.Date);
 
-% 计算所有周一到周五的日期
 allWeekdays = startDate:endDate;
-allWeekdays = allWeekdays(weekday(allWeekdays) >= 2 & weekday(allWeekdays) <= 6); % 只保留周一到周五
-
+allWeekdays = allWeekdays(weekday(allWeekdays) >= 2 & weekday(allWeekdays) <= 6);
 
 currentWeek = [];
 for i = 1:length(allWeekdays)
@@ -28,10 +26,10 @@ for i = 1:length(allWeekdays)
 
     if weekday(allWeekdays(i)) == 6 || i == length(allWeekdays) % 周五或者最后一个数据
         if height(currentWeek) >= 4 % 确保至少有4个工作日的数据
-            % 处理当前周的数据
+           
             summaryData = processWeekData(currentWeek, summaryData);
         end
-        % 重置当前周数据
+        
         currentWeek = [];
     end
 end

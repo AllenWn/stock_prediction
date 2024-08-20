@@ -1,0 +1,181 @@
+Window Size: 5
+mse_score: 0.0333
+R^2: 0.0386
+Score: 0.0360
+Best Epoch: 1
+-------------------------------------
+Window Size: 6
+mse_score: 0.0330
+R^2: 0.4139
+Score: 0.2234
+Best Epoch: 183
+-------------------------------------
+Window Size: 7
+mse_score: 0.1764
+R^2: 0.9189
+Score: 0.5476
+Best Epoch: 277
+-------------------------------------
+Window Size: 8
+mse_score: 0.1230
+R^2: 0.9067
+Score: 0.5148
+Best Epoch: 23
+-------------------------------------
+Window Size: 9
+mse_score: 0.1141
+R^2: 0.8958
+Score: 0.5050
+Best Epoch: 96
+-------------------------------------
+Window Size: 10
+mse_score: 0.1010
+R^2: 0.8860
+Score: 0.4935
+Best Epoch: 123
+-------------------------------------
+Window Size: 11
+mse_score: 0.1112
+R^2: 0.8886
+Score: 0.4999
+Best Epoch: 30
+-------------------------------------
+Window Size: 12
+mse_score: 0.1431
+R^2: 0.9090
+Score: 0.5260
+Best Epoch: 51
+-------------------------------------
+Window Size: 13
+mse_score: 0.0203
+R^2: 0.2486
+Score: 0.1344
+Best Epoch: 109
+-------------------------------------
+Window Size: 14
+mse_score: 0.0153
+R^2: -0.0241
+Score: -0.0044
+Best Epoch: 3
+-------------------------------------
+Window Size: 15
+mse_score: 0.0306
+R^2: 0.4597
+Score: 0.2452
+Best Epoch: 57
+-------------------------------------
+Window Size: 16
+mse_score: 0.0310
+R^2: 0.4366
+Score: 0.2338
+Best Epoch: 84
+-------------------------------------
+Window Size: 17
+mse_score: 0.0318
+R^2: 0.4206
+Score: 0.2262
+Best Epoch: 139
+-------------------------------------
+Window Size: 18
+mse_score: 0.0337
+R^2: 0.4295
+Score: 0.2316
+Best Epoch: 1000
+-------------------------------------
+Window Size: 19
+mse_score: 0.0342
+R^2: 0.4842
+Score: 0.2592
+Best Epoch: 202
+-------------------------------------
+Window Size: 20
+mse_score: 0.0331
+R^2: 0.5050
+Score: 0.2690
+Best Epoch: 1000
+-------------------------------------
+Window Size: 21
+mse_score: 0.0350
+R^2: 0.5238
+Score: 0.2794
+Best Epoch: 52
+-------------------------------------
+Window Size: 22
+mse_score: 0.0367
+R^2: 0.5524
+Score: 0.2945
+Best Epoch: 95
+-------------------------------------
+Window Size: 23
+mse_score: 0.0377
+R^2: 0.5548
+Score: 0.2963
+Best Epoch: 13
+-------------------------------------
+Window Size: 24
+mse_score: 0.0378
+R^2: 0.5913
+Score: 0.3146
+Best Epoch: 83
+-------------------------------------
+Window Size: 25
+mse_score: 0.0349
+R^2: 0.5955
+Score: 0.3152
+Best Epoch: 999
+-------------------------------------
+Window Size: 26
+mse_score: 0.0371
+R^2: 0.6506
+Score: 0.3438
+Best Epoch: 412
+-------------------------------------
+Window Size: 27
+mse_score: 0.0391
+R^2: 0.6828
+Score: 0.3609
+Best Epoch: 145
+-------------------------------------
+Window Size: 28
+mse_score: 0.0393
+R^2: 0.7231
+Score: 0.3812
+Best Epoch: 22
+-------------------------------------
+Window Size: 29
+mse_score: 0.0401
+R^2: 0.7437
+Score: 0.3919
+Best Epoch: 37
+-------------------------------------
+Window Size: 30
+mse_score: 0.0402
+R^2: 0.7479
+Score: 0.3941
+Best Epoch: 76
+-------------------------------------
+Window Size: 31
+mse_score: 0.0414
+R^2: 0.7546
+Score: 0.3980
+Best Epoch: 143
+-------------------------------------
+Window Size: 32
+mse_score: 0.0398
+R^2: 0.7467
+Score: 0.3933
+Best Epoch: 1000
+-------------------------------------
+Window Size: 33
+mse_score: 0.0413
+R^2: 0.7509
+Score: 0.3961
+Best Epoch: 6
+-------------------------------------
+Window Size: 34
+mse_score: 0.0433
+R^2: 0.7589
+Score: 0.4011
+Best Epoch: 994
+-------------------------------------
+Best Model: Window Size: 7, Best Epoch: 277, MSE: 4.6682, mse_score: 0.1764, R^2: 0.9189, Score: 0.5476
