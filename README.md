@@ -1,4 +1,4 @@
-# Matlab based Stock Prediction
+# MATLAB based Stock Prediction
 
 ## Project Overview
 This project aims to predict future stock returns using historical stock data. It utilizes MATLAB for data processing and machine learning modeling, offering insights into future market trends.
