@@ -30,14 +30,24 @@ This project aims to predict future stock returns using historical stock data. I
 ## Quick Start
 To run this project, MATLAB installation is required with the latest Statistical and Machine Learning Toolbox.
 
-### Data Processing
-1. Place your stock data files in the `data/raw/` directory.
-2. Run `scripts/data_loader.m` to load the data.
-3. Execute `scripts/data_preprocessor.m` to prepare the data for modeling.
+### Training overview
 
-### Model Training and Prediction
-1. Execute `scripts/predictive_model.m` to start training the models.
-2. Upon completion, prediction results will be saved in the `results/prediction_outputs/` directory.
+1. Run `training_pipeline.m` to load the data and execute model training.
+2. Execute `predict/predict_scripts.m` to load the trained model and predict the result.
+
+### Data Processing
+1. Place your raw stock data files in the `data/` directory.
+2. Run `utils/load_data.m` to load the data.
+3. Execute `process_wkretrun` to load the raw data and calculate the week return and other secondary index.
+
+### Model Training
+1. Execute `scripts/step_training.m` to start training the models.
+2. Upon completion, prediction results models will be saved in the `models/` directory.
+3. traning log will be recored in training_log.txt
+
+### Model Prediction
+1. Execute `predict/predict_x.mat` to load the prediction independent variable.
+2. Execute `predict/predict_scripts.m` to load models and predict result.
 
 ## Configuration and Dependencies
 - MATLAB R202X
