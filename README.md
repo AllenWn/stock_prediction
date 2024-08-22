@@ -66,7 +66,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) f
 
 ## Contact
 Ning Wei - allenwei0503@gmail.com
-Project Link: [https://github.com/your_username/your_project](https://github.com/AllenWn/stock_prediction)
+Project Link: (https://github.com/AllenWn/stock_prediction)
 Notes:
 Repository Structure: Includes a detailed breakdown of where files should be placed within the project's directory structure.
 Quick Start: Provides steps to get the project up and running.
