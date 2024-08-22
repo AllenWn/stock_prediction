@@ -6,17 +6,24 @@ This project aims to predict future stock returns using historical stock data. I
 ## Repository Structure
 
 ```
-├── data/
-│ ├── raw/ # Store raw data files here
-│ └── processed/ # Processed data files
-├── scripts/
-│ ├── data_loader.m # Script to load and initially process stock data
-│ ├── data_preprocessor.m # Further process data, calculate weekly returns
-│ └── predictive_model.m # Machine learning models for stock price prediction
-├── models/
-│ └── trained_models/ # Stored trained model files
-├── results/
-│ └── prediction_outputs/ # Output and prediction results
+├── src/
+│ ├── porfolio # 
+│ └── options/ # 
+├── stock_prediction/
+│ └── data/ # training data
+│ └── models/ # output models
+│ └── log/ #trianing log
+│ ── predict/
+│     └── predict_scripts.m # prediction scripts
+│     └── predit_x.mat # prediction independent variable
+│ ── utils/
+│     └── load_data.m # data loading scripts
+│     └── process_wkretrun.m # preocess data calculate retrun
+│ ── scripts/
+│     └── ..... / # previous scripts
+│ └── data_loader.m # data loading scripts
+│ └── train_model.m # modeling training scripts
+│ └── training_pipeline.m # training pipeline
 └── README.md
 ```
 
@@ -48,7 +55,7 @@ Contributions to this project are welcome, whether they be new features, improve
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details.
 
 ## Contact
-Your Name - [your_email@example.com](mailto:your_email@example.com)
+Ning Wei - allenwei0503@gmail.com
 Project Link: https://github.com/your_username/your_project
 Notes:
 Repository Structure: Includes a detailed breakdown of where files should be placed within the project's directory structure.
