@@ -4,7 +4,8 @@
 This project aims to predict future stock returns using historical stock data. It utilizes MATLAB for data processing and machine learning modeling, offering insights into future market trends.
 
 ## Repository Structure
-.
+
+```
 ├── data/
 │ ├── raw/ # Store raw data files here
 │ └── processed/ # Processed data files
@@ -17,6 +18,7 @@ This project aims to predict future stock returns using historical stock data. I
 ├── results/
 │ └── prediction_outputs/ # Output and prediction results
 └── README.md
+```
 
 ## Quick Start
 To run this project, MATLAB installation is required with the latest Statistical and Machine Learning Toolbox.
