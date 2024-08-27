@@ -1,4 +1,4 @@
-function bestModel = fitnet_train_model(inputs, targets, startSize, stepSize, maxSize, logFilePath, saveDir, modelName)
+function bestModel = fitnet_train_model(inputs, targets, startSize, stepSize, maxSize, fid, saveDir, modelName)
     inputs = table2array(inputs);
     targets = table2array(targets);
 
@@ -7,15 +7,16 @@ function bestModel = fitnet_train_model(inputs, targets, startSize, stepSize, ma
     bestEpoch = 0;
     bestWindowSize = 0;
     bestScore = 0;
+    bestRs = 0;
 
     final_mse_score = 0;
     final_R_squared = 0;
     final_total_score = 0;
 
-    fid = fopen(logFilePath, 'w');
-    if fid == -1
-        error('Failed to open log file.');
-    end
+    % fid = fopen(logFilePath, 'a+');
+    % if fid == -1
+    %    error('Failed to open log file.');
+    % end
 
     for windowSize = startSize:stepSize:maxSize
         endIndex = size(inputs, 1);
@@ -48,7 +49,7 @@ function bestModel = fitnet_train_model(inputs, targets, startSize, stepSize, ma
         SSres = sum((targetsTransformed - outputs).^2);  % 残差平方和
         R_squared = 1 - SSres / SStot;  % R 值
 
-        mse_score = 1 / (1 + mse);  
+        mse_score = 5 / (5 + mse);  
         weights = [0.5, 0.5];  % MSE, R^2 
         scores = [mse_score, R_squared];
         total_score = sum(weights .* scores);
@@ -72,9 +73,9 @@ function bestModel = fitnet_train_model(inputs, targets, startSize, stepSize, ma
         fprintf(fid, '-------------------------------------\n');
     end
     
-    fprintf(fid, 'Best Model: Window Size: %d, Best Epoch: %d, MSE: %.4f, mse_score: %.4f, R^2: %.4f, Score: %.4f\n',bestWindowSize, bestEpoch, bestPerformance, final_mse_score, final_R_squared, final_total_score);
+    fprintf(fid, 'Best Model: Window Size: %d, Best Epoch: %d, MSE: %.4f, mse_score: %.4f, R^2: %.4f, Score: %.4f\n\n',bestWindowSize, bestEpoch, bestPerformance, final_mse_score, final_R_squared, final_total_score);
     
-    fclose(fid);
+    % fclose(fid);
 
     filePath = fullfile(saveDir, modelName);
     save(filePath, 'bestModel');
